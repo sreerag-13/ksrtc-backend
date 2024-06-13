@@ -1,5 +1,6 @@
 const mongoose=require("mongoose")
-let schema=mongoose.Schema({
+let schema=mongoose.Schema(
+    {
 
     "Name":{type:String,require:true},
     "Email":{type:String,require:true},
@@ -8,7 +9,8 @@ let schema=mongoose.Schema({
     "Password":{type:String,require:true},
     "ConfirmPassword":{type:String,require:true}
 
-})
+}
+)
 let ksrtcmodel=mongoose.model("ksrtcs",schema)
 
 module.exports={ksrtcmodel}
